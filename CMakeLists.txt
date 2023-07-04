@@ -33,6 +33,6 @@ find_package(Geant4 REQUIRED)
 include(${Geant4_USE_FILE})
 
 
-target_include_directories(exe PRIVATE ${N4_SRC} ${N4_INSTALL}/include)
+target_include_directories(exe PRIVATE ${N4_INSTALL}/include)
 target_link_directories(exe PRIVATE ${N4_INSTALL}/lib)
 target_link_libraries(exe PRIVATE Nain4 ${Geant4_LIBRARIES})
